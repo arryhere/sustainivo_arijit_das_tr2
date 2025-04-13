@@ -7,6 +7,7 @@
 /debug
 /log*
 /prisma/generated/
+/uploads
 
 .env*
 !.env.sample
