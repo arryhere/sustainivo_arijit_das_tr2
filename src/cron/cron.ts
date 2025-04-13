@@ -37,6 +37,7 @@ async function cronRunner() {
             check_out_time: String(item.check_out_time),
             file_log_id: log.id,
           })),
+          skipDuplicates: true,
         });
 
         await prisma.attendanceFileLogs.update({
