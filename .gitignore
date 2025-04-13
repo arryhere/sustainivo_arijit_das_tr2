@@ -1,0 +1,15 @@
+
+# .gitignore
+
+/node_modules
+/tmp
+/dist
+/debug
+/log*
+/prisma/generated/
+
+.env*
+!.env.sample
+.DS_Store
+*.pdf
+*.pem

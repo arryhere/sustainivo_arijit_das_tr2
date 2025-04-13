@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noEmit": true,
+    "removeComments": true,
+    "checkJs": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist", "tmp"]
+}
