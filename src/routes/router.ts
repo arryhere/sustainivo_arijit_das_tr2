@@ -33,14 +33,14 @@ router.post('/upload-attendance', [], async (req: Request, res: Response, next: 
 
   // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   function checkFileType(file: any, cb: any) {
-    const filetypes = /jpeg|jpg|csv/;
+    const filetypes = /csv/;
     const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
     const mimetype = filetypes.test(file.mimetype);
 
     if (mimetype && extname) {
       return cb(null, true);
     }
-    cb('Error: jpeg|jpg|csv only!');
+    cb('Error: csv only!');
   }
 
   upload(req, res, async (err) => {
